@@ -22,7 +22,7 @@
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <i data-lucide="layout-dashboard"></i>
-                <span class="ms-2">InventoryPro</span>
+                <span class="ms-2">Inventory Zavisoft</span>
             </a>
             
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">

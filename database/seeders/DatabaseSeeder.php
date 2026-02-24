@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\User;
+use Illuminate\Database\Seeder;
+use Database\Seeders\OrderSeeder;
+use Database\Seeders\ProductsSeeder;
 use Illuminate\Support\Facades\Hash;
+use Database\Seeders\User\UserSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,12 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::updateOrCreate(
-            ['email' => 'admin@gmail.com'],
-            [
-                'name' => 'Admin User',
-                'password' => Hash::make('12345678'),
-            ]
-        );
+        $this->call([
+            UserSeeder::class,
+            ProductsSeeder::class,
+            OrderSeeder::class,
+        ]);
     }
 }

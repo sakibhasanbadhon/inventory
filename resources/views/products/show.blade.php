@@ -36,7 +36,7 @@
                     </div>
                     <div>
                         <h3 class="text-white fw-bold mb-0">{{ $product->name }}</h3>
-                        <span class="badge bg-white bg-opacity-20 text-white rounded-pill px-3">
+                        <span class="badge bg-white bg-opacity-20 text-black rounded-pill mt-2 px-3">
                             Current Stock: {{ $product->current_stock }} Units
                         </span>
                     </div>

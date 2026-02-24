@@ -20,7 +20,7 @@
 1. Clone repository
 2. Run `composer install`
 3. Configure database in `.env`
-4. Run `php artisan migrate`
+4. Run `php artisan migrate:fresh --seed`
 5. Run `php artisan serve`
 6. Access at `http://localhost:8000`
 
